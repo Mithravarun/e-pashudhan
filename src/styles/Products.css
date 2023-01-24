@@ -1,0 +1,22 @@
+.text{
+  position: relative;
+  top: 100px;
+  color: rgb(39, 116, 0);
+}
+
+.card{
+  box-shadow: 10px 10px 20px;
+}
+
+.card:hover{
+  background-color: #151320;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+button{
+  margin-bottom: 20px;
+}

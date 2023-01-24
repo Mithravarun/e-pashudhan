@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  background: rgb(27, 27, 27);}
+
+.button{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.button:hover{
+  transition: 0.5s;
+}
+
+.card{
+  width: 270px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image{
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 0 0 0 0;
+}
+
+.car-1{
+  background-image: url('paneer_butter_masala.jpg');
+}
+
+.car-2{
+  background-image: url('fruit-custard.jpg');
+}
+
+.car-3{
+  background-image: url('mac&cheese.jpg');
+}
+
+.car-4{
+  background-image: url('doodh_peda.jpg');
+}
+
+.card h2{
+  padding: 20px;
+}
+
+.card p{
+  padding: 20px;
+}
+
+.a:hover{
+  color: lightblue;
+}
+
+.card a{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.card:hover{
+  background-color: rgb(22, 97, 127);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
