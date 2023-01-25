@@ -57,7 +57,7 @@ margin-left: 1rem;
 
 const Footer = () => {
   return (
-    <Foot>
+    <Foot id='footer'>
       <Par>Copyright © {new Date().getFullYear()} My Website</Par>
       <SocialLinks>
         <Alink href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
