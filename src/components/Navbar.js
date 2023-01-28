@@ -8,15 +8,15 @@ import SubMenu from "./SubMenu";
 import { NavLink } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
 import { useAuth0 } from "@auth0/auth0-react";
-import "./NavbarStyles.css"; 
-import logo from "../assets/images/logo.png";
-
+import "./NavbarStyles.css";
+import logo from "../assets/images/1-removebg-crop.png";
+import DropdownMenu from "./DropdownMenu";
 
 const Nav = styled.div`
   background: #2196f3;
   height: 60px;
+  width: 100% ;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -64,34 +64,29 @@ const Navbar = () => {
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showNavbar} />
           </NavIcon>
-          <ul className="lst">
-            <li>
-              <NavLink to="/">
-                <img scr={logo} alt="Logo" />
-              </NavLink>
-            </li>
+
+          <NavLink to="/" className='app__navbar-logo'>
+          <img src={logo} alt="logo" />
+          </NavLink>
+          
+          <div id="flex"/>
+          
+          <div className="app__navbar-login">
             {isAuthenticated && (
-              <li>
+              <div onClick={() => logout({ returnTo: window.location.origin })}>
                 <p>{user.name}</p>
-              </li>
+              </div>
             )}
             {isAuthenticated ? (
-              <li>
-                <button
-                  className="btnn"
-                  onClick={() => logout({ returnTo: window.location.origin })}
-                >
-                  Log Out
-                </button>
-              </li>
+                <div  >
+                  <DropdownMenu />
+                </div>
             ) : (
-              <li>
-                <button className="btnn" onClick={() => loginWithRedirect()}>
+                <button onClick={() => loginWithRedirect()}>
                   Log In
                 </button>
-              </li>
             )}
-          </ul>
+          </div>
         </Nav>
         <NavbarNav navbar={navbar}>
           <NavbarWrap>
