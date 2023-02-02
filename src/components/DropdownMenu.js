@@ -7,7 +7,7 @@ const DropdownMenu = () => {
   const Menus = ["Profile", "Dashboard", "Settings", "Logout"];
   return (
     <div className="dropdown">
-      <img onClick={()=>setOpen(true)} src={user} alt="Profile" className="profile" />
+      <img onClick={()=>setOpen(!open)} src={user} alt="Profile" className="profile" />
       {open && (
         <div className="menutab">
           <ul>

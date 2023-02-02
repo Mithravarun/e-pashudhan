@@ -1,5 +1,5 @@
 import React from "react";
-import "./RecipieStyles.css";
+import "../styles/RecipieStyles.css";
 
 const Recipies = () => {
   return (

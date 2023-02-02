@@ -22,9 +22,10 @@ export const NavbarItems = [
     icon: <GiIcons.GiHealthNormal />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-    SubNav: [
+
+    subNav: [
       {
-        title: "Livestocks",
+        title: "Livestock",
         path: "/healthcare/livestock",
         cName: "nav-links",
         icon: <GiIcons.GiCow />,
@@ -32,6 +33,12 @@ export const NavbarItems = [
       {
         title: "Diseases",
         path: "/healthcare/diseases",
+        cName: "nav-links",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Cure",
+        path: "/healthcare/cure",
         cName: "nav-links",
         icon: <IoIcons.IoIosPaper />,
       },

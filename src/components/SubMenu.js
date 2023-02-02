@@ -7,15 +7,15 @@ const NavbarLink = styled(Link)`
   color: #e1e9fc;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   list-style: none;
   height: 60px;
   text-decoration: none;
   font-size: 18px;
   &:hover {
-    // opacity: 0.7;
-    background-color: #d3d3d3;
-    border-left: 4px solid #632ce4;
+    background-color: #1769aa;
+    color: black;
+    border-left: 4px solid bisque;
     cursor: pointer;
     text-decoration: none;
   }
@@ -26,7 +26,7 @@ const NavbarLabel = styled.span`
 `;
 
 const DropdownLink = styled(Link)`
-  background: #414757;
+  background: #1769aa;
   height: 60px;
   padding-left: 3rem;
   display: flex;
@@ -35,7 +35,9 @@ const DropdownLink = styled(Link)`
   color: #f5f5f5;
   font-size: 18px;
   &:hover {
-    background: #632ce4;
+    background: #414757;
+    color: #f5f5f5;
+    text-decoration: none;
     cursor: pointer;
   }
 `;
