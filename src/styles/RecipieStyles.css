@@ -1,6 +1,6 @@
-.container{
+.container1{
     display: flex;
-    justify-content: centre;
+    justify-content: center;
     flex-wrap: wrap;
   }
   
@@ -9,14 +9,14 @@
   
   }
   
-  .cards{
+  .cards1{
     background-color: white;
     width: 270px;
     margin: 10px;
     border-radius: 15px;
   }
   
-  .card-image{
+  .card-image1{
     height: 170px;
     margin-bottom: 15px;
     background-size: cover;
@@ -24,30 +24,30 @@
   }
   
   .car-1{
-    background-image: url('');
+    background-image: url('../assets/images/paneer_butter_masala.jpg');
   }
   
   .car-2{
-    background-image: url('');
+    background-image: url('../assets/images/cake.jpeg');
   }
   
   .car-3{
-    background-image: url('');
+    background-image: url('../assets/images/mac&cheese.jpg');
   }
   
   .car-4{
-    background-image: url('');
+    background-image: url('../assets/images/doodh_peda.jpg');
   }
   
-  .cards h2{
+  .cards1 h2{
     padding: 20px;
   }
   
-  .cards p{
+  .cards1 p{
     padding: 20px;
   }
   
-  .cards a{
+  .cards1 a{
     background-color: black;
     color: white;
     padding: 15px 20px;
@@ -57,7 +57,7 @@
     text-decoration: none;
   }
   
-  .cards:hover{
+  .cards1:hover{
     background-color: rgb(62, 62, 62);
     color: white;
     cursor: pointer;

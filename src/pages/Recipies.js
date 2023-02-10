@@ -5,8 +5,8 @@ const Recipies = () => {
   return (
     <div>
       <h1>Recipes</h1>
-      <section className="container">
-        <div className="cards">
+      <section className="container1">
+        <div className="cards1">
           <div className="card-image car-1"></div>
           <h2>Paneer Butter Masala</h2>
           <p>
@@ -17,7 +17,7 @@ const Recipies = () => {
           </p>
           <a href="">Read More</a>
         </div>
-        <div className="cards">
+        <div className="cards1">
           <div className="card-image car-2"></div>
           <h2>Fruit custard</h2>
           <p>
@@ -29,7 +29,7 @@ const Recipies = () => {
 
           <a href="">Read More</a>
         </div>
-        <div className="cards">
+        <div className="cards1">
           <div className="card-image car-3"></div>
           <h2>Mac & Cheese</h2>
           <p>
@@ -42,7 +42,7 @@ const Recipies = () => {
           </p>
           <a href="">Read More</a>
         </div>
-        <div className="cards">
+        <div className="cards1">
           <div className="card-image car-4"></div>
           <h2>Doodh Peda</h2>
           <p>

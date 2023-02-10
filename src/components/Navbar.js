@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 import { NavbarItems } from "./NavbarItems";
 import SubMenu from "./SubMenu";
-import { NavLink } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
 import { useAuth0 } from "@auth0/auth0-react";
-import "./NavbarStyles.css";
+import styled from "styled-components";
+import "../styles/NavbarStyles.css";
 import logo from "../assets/images/1-removebg-crop.png";
 import DropdownMenu from "./DropdownMenu";
 
 const Nav = styled.div`
   background: #2196f3;
   height: 60px;
-  width: 100% ;
+  width: 100%;
   display: flex;
   align-items: center;
 `;
@@ -65,12 +65,12 @@ const Navbar = () => {
             <FaIcons.FaBars onClick={showNavbar} />
           </NavIcon>
 
-          <NavLink to="/" className='app__navbar-logo'>
-          <img src={logo} alt="logo" />
+          <NavLink to="/" className="app__navbar-logo">
+            <img src={logo} alt="logo" />
           </NavLink>
-          
-          <div id="flex"/>
-          
+
+          <div id="flex" />
+
           <div className="app__navbar-login">
             {isAuthenticated && (
               <div onClick={() => logout({ returnTo: window.location.origin })}>
@@ -78,13 +78,13 @@ const Navbar = () => {
               </div>
             )}
             {isAuthenticated ? (
-                <div  >
-                  <DropdownMenu />
-                </div>
+              <div>
+                <DropdownMenu />
+              </div>
             ) : (
-                <button onClick={() => loginWithRedirect()}>
-                  Log In
-                </button>
+              <Link to="/login">
+                <button onClick={() => loginWithRedirect()}>Login</button>
+              </Link>
             )}
           </div>
         </Nav>

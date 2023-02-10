@@ -65,11 +65,11 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
+            <DropdownLink /*onClick={()=>subnav(false)} by using this navbar closes on click */ to={item.path} key={index}>
               {item.icon}
               <NavbarLabel>{item.title}</NavbarLabel>
             </DropdownLink>
-          );
+          ); 
         })}
     </>
   );

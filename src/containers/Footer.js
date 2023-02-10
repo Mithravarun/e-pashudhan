@@ -28,10 +28,12 @@ margin-left: 1rem;
 `;
 
 const Par = styled.p`
+margin-top: 1rem;
 @media (max-width: 600px) {
   width: 100%;
   text-align: center;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 `;
 

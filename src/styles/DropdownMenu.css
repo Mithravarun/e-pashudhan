@@ -23,13 +23,27 @@
 }
 
 .menutab li {
+    text-decoration: none;
+    color: black;
     padding: 4px;
     border-radius: 4px;
     cursor: pointer;
     transition: ease;
 }
+.menutab li div {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: ease;
+}
 
 .menutab li:hover {
+    text-decoration: none;
     background-color: #2196f3;
+    color: white;
+}
+.menutab div:hover {
+    text-decoration: none;
+    border: none;
     color: white;
 }

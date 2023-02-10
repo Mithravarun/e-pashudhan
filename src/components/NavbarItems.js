@@ -14,10 +14,16 @@ export const NavbarItems = [
     cName: "nav-links",
     icon: <AiIcons.AiFillHome />,
   },
+  {
+    title: "Test",
+    path: "/test",
+    cName: "nav-links",
+    icon: <AiIcons.AiFillHome />,
+  },
 
   {
     title: "Health care",
-    path: "/healthcare",
+    // path: "/healthcare",
     cName: "nav-links",
     icon: <GiIcons.GiHealthNormal />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
